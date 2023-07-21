@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  email: MyString
+  ph_no: 1
+  disease: MyString
+  order_date: 2023-07-19
+  medicine_name: MyString
+
+two:
+  name: MyString
+  email: MyString
+  ph_no: 1
+  disease: MyString
+  order_date: 2023-07-19
+  medicine_name: MyString

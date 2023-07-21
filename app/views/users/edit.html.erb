@@ -1,0 +1,56 @@
+<h1>Update Application</h1>
+
+<%= form_with model: @user do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+    <% @user.errors.full_messages_for(:name).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :email %><br>
+    <%= form.text_area :email %>
+    <% @user.errors.full_messages_for(:email).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :ph_no %><br>
+    <%= form.text_area :ph_no %>
+    <% @user.errors.full_messages_for(:ph_no).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :disease %><br>
+    <%= form.text_area :disease %>
+    <% @user.errors.full_messages_for(:disease).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :order_date %><br>
+    <%= form.date_field :order_date %>
+    <% @user.errors.full_messages_for(:order_date).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :medicine_name %><br>
+    <%= form.text_area :medicine_name %>
+    <% @user.errors.full_messages_for(:medicine_name).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+<%= link_to "Back", users_path %>

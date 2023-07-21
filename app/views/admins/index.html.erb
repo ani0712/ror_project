@@ -1,0 +1,18 @@
+<h1>Admin panel</h1>
+
+<ul>
+  <h2> Hello Admin </h2>
+  <% @admins.each do |ad| %>
+  <%= ad.username %>
+  <% end %>
+  <h2> All medicine items  </h2>
+    
+       <% @admins.each do |med| %>
+       <a href="/admins/<%= med.id %>">
+       <li>
+        <%= med.medicine_name %> 
+       </li>
+       
+    <% end %>
+</ul>
+<%= link_to "New Entry", new_admin_path %>
